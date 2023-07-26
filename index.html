@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sangam's Fitness</title>
+</head>
+
+<link rel="stylesheet" href="css/style.css">
+<style>
+    /* CSS Reset */
+    body {
+        font-family: sans-serif;
+        color: white;
+        margin: 0px;
+        padding: 0px;
+        background: url('img/lady.jpg');
+    }
+
+    .left {
+        /* border: 2px solid red; */
+        color: white;
+        display: inline-block;
+        position: absolute;
+        top: 20px;
+        left: 60px;
+    }
+
+    .left img {
+        width: 116px;
+        filter: invert(100%);
+    }
+
+    .left div {
+        text-align: center;
+        line-height: 19px;
+        font-size: 20px;
+    }
+
+    .mid {
+        /* border: 2px solid rgb(68, 68, 59); */
+        display: block;
+        width: 36%;
+        margin: 20px auto;
+        top: 20px;
+    }
+
+    .right {
+        position: absolute;
+        top: 32px;
+        right: 34px;
+        /* border: 2px solid green; */
+        display: inline-block;
+    }
+
+    .navbar {
+        display: inline-block;
+    }
+
+    .navbar li {
+        display: inline-block;
+    }
+
+    .navbar li a {
+        color: white;
+        text-decoration: none;
+        padding: 34px 23px;
+        font-size: 20px;
+    }
+
+    .navbar li a:hover,
+    .navbar li a:active {
+        text-decoration: underline;
+        color: grey;
+    }
+
+    .btn {
+        margin: 0px 9px;
+        color: white;
+        background-color: black;
+        padding: 3px 14px;
+        border: 2px solid grey;
+        border-radius: 7px;
+        font-size: 20px;
+        cursor: pointer;
+    }
+
+    .btn:hover {
+        background-color: rgb(71, 59, 59);
+    }
+
+    .container {
+        border: 2px solid rgb(203, 238, 203);
+        margin: 106px 80px;
+        padding: 75px;
+        width: 33%;
+        border-radius: 28px;
+    }
+
+    .form-group input {
+        text-align: center;
+        display: block;
+        width: 506px;
+        padding: 1px;
+        border: 2px solid black;
+        margin: 11px auto;
+        font-size: 25px;
+        border-radius: 8px;
+    }
+
+    .container h1 {
+        text-align: center;
+    }
+
+    .container button {
+        display: block;
+        width: 23%;
+        margin: 20px auto;
+        width: 90%;
+    }
+</style>
+
+<body>
+    <header class="header">
+        <!-- left box for logo -->
+        <div class="left">
+            <img src="img/dumbell.png" alt="">
+            <div>Sangam Fitness</div>
+
+        </div>
+        <!-- mid box for navbar -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Fitness Center</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+        <!-- right box for button -->
+        <div class="right">
+            <button class="btn">Call us Now</button>
+            <button class="btn">Email us Now</button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Join the best gym of Pokhara Now</h1>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Name">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Age">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Gender">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Locality">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Phone Number">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Email Id">
+            </div>
+            <button class="btn">Submit</button>
+        </form>
+    </div>
+</body>
+
+</html>
